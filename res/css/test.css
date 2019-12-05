@@ -1,0 +1,597 @@
+/*------------------*/
+/* all setup*/
+/*--------------------*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box ;
+    
+}
+html{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: #5a5a5a;
+    background-color: white;
+    text-rendering: optimizeLegibility;
+    /*background-image:  url(../img/backg2.jpg);
+    background-attachment: fixed;*/
+}
+
+/*------------------*/
+/* re usable*/
+/*--------------------*/
+
+.btn{
+    text-decoration: none;
+    color: white;
+    background-color: #e67e22 ;
+    padding: 15px 30px;
+    border-radius: 20px;
+    margin:0px 5px ;
+    width: 190px;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s;
+}
+.btn:hover,
+.btn:active{
+    background-color: #d35400;
+}
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.row{
+    max-width: 1240px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+h1{
+    text-transform: uppercase;
+    font-size: 300%;
+    font-weight: 400;/*do mong*/
+    letter-spacing: 1px;/*khong cach cac chu*/
+    color: white;
+    word-spacing: 5px;
+    margin-bottom: 50px;
+    line-height: 135%;
+}
+
+p.p-long{
+    text-align: center;
+    color: #265077;
+    font-size: 22px;
+    margin-top: 40px;
+    margin-bottom: 40px ;
+    width: 70%;
+    margin-left: 15% ;
+}
+
+
+.small-icon{
+    color: #1360a8;
+    font-size: 130%;
+    margin-right: 10px;
+}
+
+/*----------------------*/
+/*Header*/
+/*--------------------*/
+header{
+    background-image: linear-gradient(45deg,rgba(2,33,64,0.8) 55%,rgba(45,95,93,0.8)), url(../img/background2.jpeg);
+    background-size: cover;/*bao trung html dang viet*/
+    background-position: center;
+    height: 30vh;/*bao trum man hinh*/
+    background-attachment: fixed;/*vi tri ko thay doi*/
+    margin: 0 auto;
+}
+.logo{
+    width: 300px;
+    float: left;
+    margin-left:70px ;
+    margin-top: -10px;
+}
+header .btn{
+    float: left;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(86,128,233) ;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin:15px 10px ;
+    width: 170px;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s;
+    margin-top: 20px;
+}
+
+header .btn:hover,
+header .btn:active{
+    background-color: #146bc2;
+}
+
+header .row{
+    position: absolute;
+    margin-left: 35%;
+    transform: translate(34.5%,-105%);
+    width: 1080px;
+    height: 150px;
+}
+header h2{
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 90%;
+    font-weight: 700;/*do mong*/
+    letter-spacing: 1px;/*khong cach cac chu*/
+    word-spacing: 5px;
+    color: #fff;
+}
+/*-----------------------*/
+/*first-section-------*/
+/*------------------*/
+
+.first-section{
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color:#1e272e;
+    height: 37px;
+    border-bottom: 2px solid #f19800;
+}
+.first-section ul{
+    margin: 0 auto;
+    padding: 0;
+    width: 1080px;
+
+}
+.home-nav .home {
+    text-decoration: none;
+    color: white;
+    font-size: 75%;
+    font-weight: 600;
+    width: 6%;
+    margin-left: 4%;
+    text-align: center;
+    background: #0a3d62;
+    padding: 10px 0px;
+    float: left;
+    position: relative;
+    transform: translate(0,-20%);
+}
+.home-nav .bt{
+    text-decoration: none;
+    color: white;
+    font-size: 67%;
+    font-weight: 600;
+    width: 15%;
+    text-align: center;
+    background-color:#1e272e;
+    padding: 9px 0px;
+    float: left;
+    transition: 0.5s;
+    border-bottom: 0px solid #f19800;
+    height: 34.4px;
+}
+.home-nav .search-nav{
+    text-decoration: none;
+    color: white;
+    font-size: 67%;
+    font-weight: 600;
+    width: 25%;
+    text-align: center;
+    background-color:#1e272e;
+    float: left;
+    transition: 0.5s;
+    border-bottom: 0px solid #f19800;
+    height: 34.4px;
+}
+.home-nav .home i{
+    font-size: 20px;
+}
+.first-section ul a.bt:hover{
+    background: #485460;
+     color: white;
+}
+/*-------------------*/
+/*-----search-list--------*/
+/*-------------          */
+.search-section{
+    margin-top: 30px;
+    padding-top: 10px;
+    background-color: #f3f3f3;
+    width: 1080px;
+    height:100px;
+    margin: 0 auto;
+}
+.search{
+}
+.search-txt{
+    display: inline-block;
+    background-color: white;
+    color: #000;
+    width: 100%;
+    padding-top: 15px;
+}
+.search-btn{
+    color: #e84118;
+	width: 40px;
+    height: 40px;
+    margin-top: 9px;
+    float: left;
+	display: flex;
+	justify-content: center;
+}
+.search-btn:hover{
+    color: #428bcf;
+}
+
+
+
+
+
+.update-title{
+    color: black;
+}
+.update-title:hover{
+    color: #3389da;
+}
+.update-section p{
+    font-size: 13px;
+    padding-bottom: 8px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}
+.left{
+    float: left;
+    padding-top: 5px;
+    font-size: 13px;
+    display: inline-block;
+    font-weight: 600;
+    cursor: pointer;
+}
+.right{
+    float: right;
+    padding-top: 5px;
+    padding-right: 15px;
+    font-size: 11px;
+    color: cornsilk;
+    cursor: pointer;
+}
+.update-section .left:hover,
+.update-section .left:active{
+    color: #575fcf;
+}
+.update-section .right:hover,
+.update-section .right:active{
+    color: #575fcf;
+}
+.author{
+    font-size:12px ;
+    color: blanchedalmond;
+    font-weight: 300;
+    padding-left: 5px;
+}
+.more{
+    font-size: 15px ;
+    color: darkblue;
+    padding-left: 5%;
+}
+
+.update-section img{
+    width: 80%;
+    margin: 10px;
+    border-radius: 5px;
+    border: 2px solid #cac1c1;
+}
+.update-section img:hover,
+.update-section img:active{
+    transform: scale(1.05);/*nổi ảnh lên*/
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.update-col2{
+    border-bottom: 4px solid #e67e22;
+}
+.update-col1{
+    padding-bottom:8px;
+    border-bottom: 4px solid #e67e22;
+}
+.p-num{
+    color: rgba(60, 60, 245, 0.829);
+}
+.p-num .red{color: red;}
+/*------------------*/
+/* top-section-----*/
+/*--------------------*/
+.top-section{
+    width: 1080px;
+    margin: 0 auto; 
+}
+.top1{
+    background-color: #f7f7f7;
+    border-bottom: 4px solid #e67e22;
+    border-radius: 5px;
+}
+.top1 img{
+    width: 90%;
+    border-radius: 3px;
+}
+.top11 {
+    height: 120px;
+    padding: 5px;
+    border-bottom: 1.5px solid white;
+}
+.top11 img{
+    
+    width: 50%;
+    margin-left: 30px;
+}
+.top12 .vote{
+    padding-left: 20px;
+}
+.top-section h4{
+    padding: 10px;
+}
+.top12 img{
+    margin: 10px;
+    border-radius: 3px;
+}
+.top12 p,h4{
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+.top12{
+    border-right: 1.5px solid white;
+}
+.top-section p{
+    float: left;
+    display: inline-block;
+}
+.top-section .image:hover,
+.top-section .image:active{
+    transform: scale(1.05);/*nổi ảnh lên*/
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.top-section .imag:hover,
+.top-section .imag:active{
+    transform: scale(1.01);/*nổi ảnh lên*/
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.vote i{
+    color: white;
+}
+.vote li{
+    display: inline;
+}
+.vote .check{
+    color: rgb(252, 131, 45);
+}
+.top11 .vote{
+    padding-bottom: 5px;
+}
+
+
+.top-section .p-title{
+    padding-bottom: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.top-section .p-title:hover{
+    padding-bottom: 5px;
+    color: #575fcf;
+    font-weight: 600;
+}
+.top-section p{
+    font-size: 13px;
+    padding-bottom: 8px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}
+
+.top-section ul,li{
+    list-style-type: none;
+}
+.top-section .top2 li{
+    height: 50px;
+    width: 100%;
+    padding: 5px;
+    padding-left: 5%;
+}
+.top-section a{
+    color: black;
+    font-family: Roboto Condensed,sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    max-width: 70%;
+}
+.top2{
+    background-color: #f7f7f7;
+    border-bottom: 4px solid #e67e22;
+    border-radius: 5px;
+    padding-bottom: 26px;
+}
+.top-section .left .author{
+    margin-left: 30px;
+}
+.top-section .left:hover,
+.top-section .left:active{
+    color: #575fcf;
+}
+.top-section .right:hover,
+.top-section .right:active{
+    color: #575fcf;
+}
+.top-section h4:hover{
+    color: #575fcf ;
+}
+/*--------------*/
+/*testimonial*/
+/*---------------*/
+.testimonials-section{
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.testimonials-section h2{
+    margin-bottom: 70px;
+}
+blockquote{
+    position: relative;
+    width: 95%;
+    font-size: initial;
+    line-height: 140%;
+    color: black;
+}
+blockquote::before{
+    content: '\201C';
+    display: block;
+    font-size: 400%;
+    position:absolute;
+    top :-10px;
+    left: -10px;
+}
+cite{
+    display: block;
+    color: #428bcf;
+    margin-top: 25px;
+}
+cite img{
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #3c92e2;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/*----------------------*/
+/*contact form---------*/
+/*--------------------*/
+.contact-section{
+    background-image: linear-gradient(45deg,rgba(2,33,64,0.8) 55%,rgba(45,95,93,0.8)), url(../img/background3.jpeg);
+    background-size: cover;/*bao trung html dang viet*/
+    background-position: center;
+    height: 50vh;/*bao trum man hinh*/
+    background-attachment: fixed;/*vi tri ko thay doi*/
+    
+}
+.contact-section .inf p {
+    float: left;
+    margin-top: 65px;
+    font-size: 90%;
+    color: white;
+}
+
+.infomation{
+    list-style: none;
+    color: white;
+    line-height: 200%;
+    margin-top: 70px;
+    font-size: 95%;
+    word-spacing:1px;
+}
+.infomation .small-icon{
+    color: #427db3;
+}
+.infomation .small-icon:hover,
+.infomation .small-icon:active{
+    transform: scale(1.2);
+}
+.social-icon{
+    margin-top: 50px;
+    list-style: none;
+}
+.social-icon li{
+    display: inline-block;
+    font-size:250%;
+    margin-left:20px ;
+    color: white;
+}
+
+.social-icon li i{
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.social-icon li i:hover,
+.social-icon li i:active{
+    transform:scale(1.3);
+    color: #e67e22;
+}
+/*----------------------*/
+/*form---------------*/
+/*--------------------*/
+form{
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-left: 40%;
+    width: 50%;
+    padding: 20px;
+    border-radius: 5px;
+    
+}
+label{
+    padding-top: 5px;
+    padding-left: 15%;
+    font-size: 100%;
+    color: white;
+    
+}
+input,textarea{
+    outline: none;/*khi viết không có viền xanh*/
+    padding: 7px;
+    background-color: white;
+    border: 1px solid rgba(80, 79, 79, 0.8);
+    margin-left: 30px;
+    border-radius: 3px;
+    margin: 4px;
+}
+textarea{
+    resize: none;/*mat 3 dau gach*/
+    height: 60px;
+}
+
+form .row:last-child{
+    text-align: center;
+    height: 50px;
+}
+.contact-section .btn{
+    margin-top: 30px;
+    border-radius: 5px;
+    margin-left: 25%;
+    margin-bottom: 30px;
+}
+input[type=text],textarea{/*chỉnh chữ bên trong của input*/
+    width: 95%;
+    font-size: 100%;
+}
+.form input[type=text],textarea{/*chỉnh chữ bên trong của input*/
+    width: 90%;
+    font-size: 80%;
+}
+input[type=text]{
+    padding: 5px;
+    padding-left: 5%;
+}
+.form input[type=text]{
+    padding: 5px;
+}
+input[type=text]:focus{
+    /*khi nhấn vào*/
+    color: black;
+    background-color: white;
+}
+
+/*----------------------*/
+/*footer---------------*/
+/*--------------------*/
+footer{
+    text-align: center;
+    background-color: #333232;
+    padding: 10px;
+    color: white;
+}
